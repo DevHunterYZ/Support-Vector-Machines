@@ -2,8 +2,6 @@ from sklearn import datasets
 from sklearn import svm    		
 import numpy as np
 import matplotlib.pyplot as plt
-iris_dataset = datasets.load_iris() # Iris veriseti
-
 iris = datasets.load_iris()
 X = iris.data[:, :2]  # Sadece Sepal iki özelliğini alıyoruz.
 y = iris.target
