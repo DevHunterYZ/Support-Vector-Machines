@@ -16,7 +16,7 @@ xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
 X_plot = np.c_[xx.ravel(), yy.ravel()]
 
 
-C = 1.0 # SVM regularization parameter
+C = 1.0 # SVM normalleştirme parametresi
 svc = svm.SVC(kernel='linear', C=C, decision_function_shape='ovr').fit(X, y)
 Z = svc.predict(X_plot)
 Z = Z.reshape(xx.shape)
